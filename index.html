@@ -1,107 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-    <style>
-        body {
-            background-color: #f5f5f5;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        
-        table {
-            background-color: white;
-            border: 2px solid #2a6b6b
-        }
-        
-        th {
-            background-color: #2a6b6b;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            padding: 15px;
-            border: 2px solid #2a6b6b;
-        }
-        
-        td {
-            background-color: #ffffdd;
-            color: #333;
-            text-align: center;
-            font-size: 16px;
-            border: 2px solid #2a6b6b;
-        }
-        
-        .green {
-            background-color: #b8d88e;
-            color: white
-        }
-        
-        .footer {
-            background-color: #2a6b6b;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            border: 2px solid #2a6b6b;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Workshop - 首頁</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table cellpadding="20" cellspacing="3">
-        <tr>
-            <th colspan="6">Table Title</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td colspan="3" class="green">7</td>
-            <td colspan="3" class="green">8</td>
-        </tr>
-        <tr>
-            <td rowspan="2" class="green">9</td>
-            <td>10</td>
-            <td rowspan="2" class="green">11</td>
-            <td>12</td>
-            <td rowspan="2" class="green">13</td>
-            <td>14</td>
-        </tr>
-        <tr>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-        </tr>
-        <tr>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-            <td>22</td>
-            <td>23</td>
-        </tr>
-        <tr>
-            <td>24</td>
-            <td colspan="4" rowspan="3" class="green">25</td>
-            <td>25</td>
-        </tr>
-        <tr>
-            <td>26</td>
-            <td>27</td>
-        </tr>
-        <tr>
-            <td>28</td>
-            <td>29</td>
-        </tr>
-        <tr>
-            <td colspan="6" class="footer">Table footnote</td>
-        </tr>
-    </table>
+    <!-- 導航列 -->
+    <nav class="navbar">
+        <div class="logo">Creative Workshop</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要內容 -->
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Creative Workshop</h1>
+            <p>探索設計 | 學習技術 | 創造作品</p>
+            <a href="about.html" class="btn">開始探索</a>
+        </div>
+        
+        <!-- 裝飾性圖案 -->
+        <div class="decoration-dots"></div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

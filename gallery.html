@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Creative Workshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 導航列 -->
+    <nav class="navbar">
+        <div class="logo">Creative Workshop</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要內容 -->
+    <main class="gallery-page">
+        <div class="container">
+            <h1>Project Gallery</h1>
+            <p class="subtitle">我的作品與學習成果展示</p>
+
+            <!-- 圖片網格 -->
+            <div class="image-grid">
+                <!-- 作品1 - 帶有 Image Map -->
+                <div class="gallery-item">
+                    <img src="網頁設計.webp" alt="Web Design" usemap="#project1-map">
+                    <div class="image-overlay">
+                        <h3>網頁設計</h3>
+                        <p>響應式網頁設計專案</p>
+                    </div>
+                    
+                    <!-- Image Map: 可點擊區域 -->
+                    <map name="project1-map">
+                        <area shape="poly" coords="50,50,200,50,200,150,50,150" 
+                              href="about.html" alt="Learn More">
+                    </map>
+                </div>
+
+                <!-- 作品2 - 帶有 Fade In 和半透明文字框 -->
+                <div class="gallery-item">
+                    <img src="介面設計.webp" alt="UI Design">
+                    <div class="image-overlay fade-in">
+                        <h3>介面設計</h3>
+                        <p>使用者介面設計作品</p>
+                        <!-- 半透明文字框 (50% opacity) -->
+                        <div class="info-box-overlay">
+                            <p>這是一個現代化的使用者介面設計，注重視覺層次和使用者體驗。採用簡潔的色彩搭配和清晰的資訊架構。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品3 -->
+                <div class="gallery-item">
+                    <img src="javascript.png" alt="JavaScript App">
+                    <div class="image-overlay">
+                        <h3>JavaScript 應用</h3>
+                        <p>互動式網頁應用程式</p>
+                    </div>
+                </div>
+
+                <!-- 作品4 -->
+                <div class="gallery-item">
+                    <img src="canvas.jpg" alt="Canvas Art">
+                    <div class="image-overlay">
+                        <h3>Canvas 創作</h3>
+                        <p>使用 Canvas API 的視覺作品</p>
+                    </div>
+                </div>
+
+                <!-- 作品5 -->
+                <div class="gallery-item">
+                    <img src="css_animation.webp" alt="CSS Animation">
+                    <div class="image-overlay">
+                        <h3>CSS 動畫</h3>
+                        <p>純 CSS 動畫效果展示</p>
+                    </div>
+                </div>
+
+                <!-- 作品6 -->
+                <div class="gallery-item">
+                    <img src="response_design.png" alt="Responsive Design">
+                    <div class="image-overlay">
+                        <h3>響應式設計</h3>
+                        <p>跨裝置網頁設計</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase - Creative Workshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 導航列 -->
+    <nav class="navbar">
+        <div class="logo">Creative Workshop</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="showcase.html" class="active">Showcase</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要內容 -->
+    <main class="showcase-page">
+        <div class="container">
+            <h1>Interactive Showcase</h1>
+            <p class="subtitle">JavaScript 互動元件展示</p>
+
+            <!-- 互動式表格樣式器 -->
+            <section class="table-section">
+                <h2>📊 Table Styler</h2>
+                <p>使用按鈕來動態改變表格的樣式！</p>
+
+                <table id="myTable" cellpadding="20" cellspacing="3">
+                    <tr>
+                        <th>Subject</th>
+                        <th>HTML</th>
+                        <th>Python</th>
+                        <th>C</th>
+                    </tr>
+                    <tr>
+                        <td>Score</td>
+                        <td>95</td>
+                        <td>88</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>Hours</td>
+                        <td>120</td>
+                        <td>100</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+
+                <div class="control-group">
+                    <h3>Change Table Width</h3>
+                    <div class="controls">
+                        <button onclick="changeWidth('200px')">200px</button>
+                        <button onclick="changeWidth('500px')">500px</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <h3>Change Border & Spacing Width</h3>
+                    <div class="controls">
+                        <button onclick="changeBorderSpacing('1px')">1px</button>
+                        <button onclick="changeBorderSpacing('10px')">10px</button>
+                        <button onclick="changeBorderSpacing('20px')">20px</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <h3>Change Table Color</h3>
+                    <div class="controls">
+                        <button class="color-button" style="background-color: #ffe4b5;" 
+                                onclick="changeColor('#ffe4b5')"></button>
+                        <button class="color-button" style="background-color: #e6f3ff;" 
+                                onclick="changeColor('#e6f3ff')"></button>
+                        <button class="color-button" style="background-color: #f0e6ff;" 
+                                onclick="changeColor('#f0e6ff')"></button>
+                        <button class="color-button" style="background-color: #ffe6e6;" 
+                                onclick="changeColor('#ffe6e6')"></button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <button class="reset-btn" onclick="resetTable()">🔄 Reset to Original</button>
+                </div>
+            </section>
+
+            <!-- Polaroid 圖片切換器 -->
+            <section class="polaroid-section">
+                <h2>📸 Polaroid Image Viewer</h2>
+                <p>瀏覽我的工作室照片集</p>
+                
+                <div class="photo-frame">
+                    <div class="frame-title">Workshop Moments</div>
+                    
+                    <div class="polaroid">
+                        <div class="image-container" id="imageContainer">
+                            <p style="color: #999;">Loading images...</p>
+                        </div>
+                    </div>
+
+                    <div class="polaroid-controls">
+                        <button onclick="prevImage()" class="nav-btn">◄ Previous</button>
+                        <span class="image-counter" id="counter">Image 1 of 5</span>
+                        <button onclick="nextImage()" class="nav-btn">Next ►</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 測試：直接在頁面中加入 JavaScript -->
+    <script>
+        // 測試函數是否能執行
+        console.log('Showcase page loaded!');
+        console.log('Table element:', document.getElementById('myTable'));
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
